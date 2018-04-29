@@ -1,0 +1,8 @@
+---
+Name: rssroutes
+---
+SilverStripe\Control\Director:
+  rules:
+    'rss/': 'Suilven\RSS\Controller\RSSFeedController'
+#    rss//$Action/$ID/$OtherID: TitleDK\Calendar\FullCalendar\FullcalendarController
+

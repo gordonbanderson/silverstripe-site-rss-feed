@@ -1,4 +1,4 @@
-# pagesrss
+# Site RSS Feed
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -7,48 +7,27 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-**Note:** Replace ```Gordon Anderson``` ```gordonbanderson``` ```https://github.com/gordonbanderson``` ```gordon.b.anderson@gmail.com``` ```suilven``` ```pagesrss``` ```RSS feed of new pages``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line. You can run `$ php prefill.php` in the command line to make all replacements at once. Delete the file prefill.php as well.
-
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
-
-## Structure
-
-If any of the following are applicable to your project, then the directory structure should follow industry best practices by being named the following.
-
-```
-bin/        
-config/
-src/
-tests/
-vendor/
-```
-
+Currently a very simplistic module, it provides a site RSS feed of created pages at /rss.  It is based on
+https://docs.silverstripe.org/en/4/developer_guides/integration/rssfeed/
 
 ## Install
 
 Via Composer
 
 ``` bash
-$ composer require suilven/pagesrss
+$ composer require "silverstripe-site-rss:^1"
 ```
 
 ## Usage
 
-``` php
-$skeleton = new suilven\pagesrss();
-echo $skeleton->echoPhrase('Hello, League!');
-```
+Simply link to `https://<yoursite>/rss` to get an RSS feed.
 
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
 ## Testing
-
-``` bash
-$ composer test
-```
+@todo
 
 ## Contributing
 
@@ -67,17 +46,3 @@ If you discover any security related issues, please email gordon.b.anderson@gmai
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/suilven/pagesrss.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/suilven/pagesrss/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/suilven/pagesrss.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/suilven/pagesrss.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/suilven/pagesrss.svg?style=flat-square
-
-[link-packagist]: https://packagist.org/packages/suilven/pagesrss
-[link-travis]: https://travis-ci.org/suilven/pagesrss
-[link-scrutinizer]: https://scrutinizer-ci.com/g/suilven/pagesrss/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/suilven/pagesrss
-[link-downloads]: https://packagist.org/packages/suilven/pagesrss
-[link-author]: https://github.com/gordonbanderson
-[link-contributors]: ../../contributors
