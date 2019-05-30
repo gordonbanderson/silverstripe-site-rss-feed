@@ -14,17 +14,9 @@ use SilverStripe\Control\RSS\RSSFeed;
 
 class RSSFeedController extends ContentController
 {
- //   private static $allowed_actions = [
- //       'index'
- //   ];
-
     public function init()
     {
-
         parent::init();
-
- // RSSFeed::linkToFeed($this->Link() . "rss", "25 Most Recently Updated Pages");
-
     }
 
     public function index()
